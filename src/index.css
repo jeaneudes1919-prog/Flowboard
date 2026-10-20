@@ -1,0 +1,10 @@
+@tailwind base;@tailwind components;@tailwind utilities;
+body{min-height:100vh;background-attachment:fixed;font-family:"Inter Variable",sans-serif;-webkit-font-smoothing:antialiased}
+html.dark body{background:radial-gradient(1100px 600px at 8% -10%,#312e81 0,transparent 60%),radial-gradient(900px 500px at 100% 0,#581c87 0,transparent 55%),#0b0b1a;color:#e8e8f5}
+html:not(.dark) body{background:radial-gradient(1000px 500px at 0 -10%,#c7d2fe,transparent 60%),#f4f5fb;color:#1b1b2e}
+::selection{background:#6366F1;color:#fff}
+::-webkit-scrollbar{height:10px;width:8px}::-webkit-scrollbar-thumb{background:#6366f155;border-radius:9px}
+:focus-visible{outline:2px solid #818cf8;outline-offset:2px}
+.glass{background:rgba(255,255,255,.7);border:1px solid rgba(0,0,0,.06);backdrop-filter:blur(14px)}
+.dark .glass{background:rgba(255,255,255,.06);border-color:rgba(255,255,255,.1)}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
